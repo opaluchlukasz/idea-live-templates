@@ -1,0 +1,22 @@
+<templateSet group="Angular1">
+  <template name="angularController" value="(function() {&#10;    'use strict';&#10;&#10;    var $CONTROLLER_NAME_DECAPITALIZED$ = function($scope) {&#10;     &#10;    };&#10;&#10;    $CONTROLLER_NAME_DECAPITALIZED$.$inject = ['$scope'];&#10;&#10;    var CONTROLLER_NAME = '$CONTROLLER_NAME$';&#10;&#10;    angular.module('$MODULE$').controller(CONTROLLER_NAME, $CONTROLLER_NAME_DECAPITALIZED$);&#10;})();&#10;" description="Generates Angular controller" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTROLLER_NAME_DECAPITALIZED" expression="decapitalize(CONTROLLER_NAME)" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROLLER_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it('$VAR$', function() {&#10;    &#10;});" description="Generates Jasmine spec function" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="desc" value="decribe('$VAR$', function() {&#10;});" description="Generates Jasmine describe function" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
