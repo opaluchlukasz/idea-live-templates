@@ -13,7 +13,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="desc" value="decribe('$VAR$', function() {&#10;});" description="Generates Jasmine describe function" toReformat="false" toShortenFQNames="true">
+  <template name="desc" value="describe('$VAR$', function() {&#10;});" description="Generates Jasmine describe function" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
